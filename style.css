@@ -30,10 +30,10 @@ body{
     background-color: var(--bg-principal);
 }
 
-.page{
+/* .page{
     max-width: 38.4rem;
     margin: 0 auto;
-}
+} */
 
 img{
     width: 100%;
@@ -105,9 +105,10 @@ img{
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 15px;
+    font-size: 2rem;
+    line-height: 1.5rem;
     
+    padding: 1.5rem;
     margin-bottom: 6.3rem;
     margin-top: 1.4rem;
     
@@ -120,6 +121,9 @@ img{
     color: var(--fc-paragraph); 
 }
 
+main{
+    margin-top: 6.4rem;
+}
 
 main .cards{
     display: grid;
@@ -141,40 +145,6 @@ main .cards{
     animation: downtop 700ms 350ms reverse backwards;
 }
 
-
-.cards>.card1:nth-child(1){
-    border: 5px solid red;
-    height: 15rem;
-    width: 22rem;
-}
-.cards>.card:nth-child(2){
-    border: 5px solid black;
-    width: 22rem;
-    height: 35rem;
-}
-.cards>.card:nth-child(3){
-    border: 5px solid purple;
-    width: 22rem;
-    height: 35rem;
-}
-
-.cards>.card:nth-child(4){
-    border: 5px solid green;
-    height: 15rem;
-    width: 22rem;
-}
-
-.cards>.card:nth-child(5){
-    border: 5px solid brown;
-    height: 15rem;
-    width: 22rem;
-}
-
-.cards>.card:nth-child(6){
-    border: 5px solid yellow;
-    width: 22rem;
-    height: 35rem;
-}
 
 .card span{
 
@@ -209,6 +179,31 @@ main .cards{
 }
 
 
+
+footer p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+
+
+    text-align: center;
+
+    color: #4A4E69;
+
+    mix-blend-mode: normal;
+
+    margin-top: 5rem;
+    margin-bottom: 4.6rem;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #4A4E69;
+    font-weight: bold;
+}
+
 @keyframes topdown{
     0%{
         opacity: 0;
@@ -239,19 +234,23 @@ main .cards{
 }
 
 @media (min-width: 700px){
-    .page{
+    /* .page{
         max-width: 80rem;
         padding: 0 5rem;
+    } */
+
+    main{
+        padding-inline: 3rem;
     }
 
     main .cards{
         grid-template-columns: 1fr 1fr 1fr;
-    }
-}
- @media (min-width: 930px){
-    main .cards{
-        grid-template-areas: "A C E"
-        "B D F";
+        grid-template-rows: 1fr 9.8rem;
+
+        grid-template-areas: 
+        'A B E'
+        'D B F'
+        'D C F';
     }
 
     main .cards>div:nth-child(1){
@@ -275,24 +274,45 @@ main .cards{
     main .cards>div:nth-child(6){
         grid-area: F;
     }
-} 
+
+    img{
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+ /* @media (min-width: 930px){
+    main .cards{
+        grid-template-areas: "A C E"
+        "B D F";
+    }
+
+    
+}  */
 
 @media (min-width: 1280px){
 
+
+    .page{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 37.7rem 1fr;
+    }
+
+
     .header-asside{
-        position: absolute;
+        /* position: absolute; */
         width: 37.7rem;
-        height: 72rem;
-        left: 0px;
-        top: 0px;
+        height: 100%;
+        /* left: 0px;
+        top: 0px; */
 
         background: #8E9AAF;
     }
 
     .header-asside h1{
-        position: absolute;
+        /* position: absolute;
         width: 37.7rem;
-        height: 7rem;
+        height: 7rem; */
         left: 0px;
         top: 23.1rem;
         font-size: 4.8rem;
@@ -316,14 +336,14 @@ main .cards{
         line-height: 2rem;
         
 
-        display: flex;
+        /* display: flex;
         align-items: center;
-        text-align: center;
+        text-align: center; */
 
         color: #FFFFFF;
     }
 
-    .cards{
+    /* .cards{
        
         display: inline-flex;
         align-items: center;
@@ -332,5 +352,5 @@ main .cards{
         margin-left: 47.5rem;
 
         gap: 3.2rem;
-    }
+    } */
 }
