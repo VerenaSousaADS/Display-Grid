@@ -174,10 +174,13 @@ main .cards{
     animation: topdown 700ms;
 }
 
+footer{
+    opacity: 0;
+}
 
-
+/* 
 footer p{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.4rem;
@@ -198,7 +201,7 @@ footer p a{
     text-decoration: none;
     color: #4A4E69;
     font-weight: bold;
-}
+} */
 
 @keyframes topdown{
     0%{
@@ -272,6 +275,34 @@ footer p a{
         height: 100%;
         border-radius: 10px;
     }
+
+    footer{
+        opacity: 1;
+    }
+
+    footer p{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+    
+    
+        text-align: center;
+    
+        color: #4A4E69;
+    
+        mix-blend-mode: normal;
+    
+        margin-top: 5rem;
+        margin-bottom: 4.6rem;
+    }
+    
+    footer p a{
+        text-decoration: none;
+        color: #4A4E69;
+        font-weight: bold;
+    }
 }
 @media (min-width: 1280px){
 
@@ -321,4 +352,8 @@ footer p a{
         color: #FFFFFF;
     }
 
+   
+
 }
+
+
