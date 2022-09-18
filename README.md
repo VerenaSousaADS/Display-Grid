@@ -3,7 +3,7 @@
 
 ### Space Cream
 
-<img src="/img/display-grid.png" alt="Imagem do site contruido no curso Explorer" />
+<img src="/img/display-grid-1.png" alt="Imagem do site contruido no curso Explorer" />
 
 #### Aprendizados:
 
