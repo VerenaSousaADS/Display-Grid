@@ -154,6 +154,7 @@ main .cards{
     font-weight: 400;
     font-size: 2rem;
     line-height: 34px;
+    text-transform: uppercase;
 
     letter-spacing: 0.05em;
 
